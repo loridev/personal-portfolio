@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from dotenv import dotenv_values
 
 env = {
-  **dotenv_values('./../.env')
+  **dotenv_values('.env.dev')
 }
 
 DATABASE_URL = env['DATABASE_URL']
